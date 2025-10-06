@@ -5,21 +5,21 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.fredcodecrafts.lab_week_06.model.CatBreed
 import com.fredcodecrafts.lab_week_06.model.CatModel
 import com.fredcodecrafts.lab_week_06.model.Gender
+import androidx.appcompat.app.AlertDialog
 
 class MainActivity : AppCompatActivity() {
 
-    private val recyclerView: RecyclerView by lazy {
-        findViewById(R.id.recycler_view)
-    }
+    private val recyclerView: RecyclerView by lazy { findViewById(R.id.recycler_view) }
 
     private val catAdapter by lazy {
-        CatAdapter(layoutInflater, GlideImageLoader(this))
+        CatAdapter(layoutInflater, GlideImageLoader(this), object : CatAdapter.OnClickListener {
+            override fun onItemClick(cat: CatModel) = showSelectionDialog(cat)
+        })
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,5 +54,14 @@ class MainActivity : AppCompatActivity() {
                 )
             )
         )
+    }
+
+    // 🔹 Popup dialog when an item is clicked
+    private fun showSelectionDialog(cat: CatModel) {
+        AlertDialog.Builder(this)
+            .setTitle("Cat Selected")
+            .setMessage("You have selected cat ${cat.name}")
+            .setPositiveButton("OK", null)
+            .show()
     }
 }
