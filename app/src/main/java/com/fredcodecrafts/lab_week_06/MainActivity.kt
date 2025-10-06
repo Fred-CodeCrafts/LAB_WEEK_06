@@ -42,17 +42,18 @@ class MainActivity : AppCompatActivity() {
 
         // Add 10 cats
         val cats = listOf(
-            CatModel(Gender.Male, CatBreed.AmericanCurl, "Mochi", "Loves sleeping all day", "https://placekitten.com/200/201"),
-            CatModel(Gender.Female, CatBreed.BalineseJavanese, "Luna", "Playful and talkative", "https://placekitten.com/200/202"),
-            CatModel(Gender.Male, CatBreed.ExoticShorthair, "Simba", "Majestic and lazy", "https://placekitten.com/200/203"),
-            CatModel(Gender.Female, CatBreed.ExoticShorthair, "Nala", "Curious and brave", "https://placekitten.com/200/204"),
-            CatModel(Gender.Male, CatBreed.AmericanCurl, "Milo", "Loves snacks", "https://placekitten.com/200/205"),
-            CatModel(Gender.Female, CatBreed.BalineseJavanese, "Chloe", "Loves climbing", "https://placekitten.com/200/206"),
-            CatModel(Gender.Male, CatBreed.ExoticShorthair, "Oreo", "Always hungry", "https://placekitten.com/200/207"),
-            CatModel(Gender.Female, CatBreed.AmericanCurl, "Cleo", "Elegant and calm", "https://placekitten.com/200/208"),
-            CatModel(Gender.Male, CatBreed.ExoticShorthair, "Leo", "Energetic and loud", "https://placekitten.com/200/209"),
-            CatModel(Gender.Female, CatBreed.BalineseJavanese, "Mimi", "Loves attention", "https://placekitten.com/200/210")
+            CatModel(Gender.Male, CatBreed.AmericanCurl, "Mochi", "Loves sleeping all day", "https://cdn2.thecatapi.com/images/7dj.jpg"),
+            CatModel(Gender.Female, CatBreed.BalineseJavanese, "Luna", "Playful and talkative", "https://cdn2.thecatapi.com/images/egv.jpg"),
+            CatModel(Gender.Male, CatBreed.ExoticShorthair, "Simba", "Majestic and lazy", "https://cdn2.thecatapi.com/images/bar.jpg"),
+            CatModel(Gender.Female, CatBreed.ExoticShorthair, "Nala", "Curious and brave", "https://cdn2.thecatapi.com/images/9z6.jpg"),
+            CatModel(Gender.Male, CatBreed.AmericanCurl, "Milo", "Loves snacks", "https://cdn2.thecatapi.com/images/MTY3ODIyMQ.jpg"),
+            CatModel(Gender.Female, CatBreed.BalineseJavanese, "Chloe", "Loves climbing", "https://cdn2.thecatapi.com/images/b1d.jpg"),
+            CatModel(Gender.Male, CatBreed.ExoticShorthair, "Oreo", "Always hungry", "https://cdn2.thecatapi.com/images/d3j.jpg"),
+            CatModel(Gender.Female, CatBreed.AmericanCurl, "Cleo", "Elegant and calm", "https://cdn2.thecatapi.com/images/9k5.jpg"),
+            CatModel(Gender.Male, CatBreed.ExoticShorthair, "Leo", "Energetic and loud", "https://cdn2.thecatapi.com/images/1hg.jpg"),
+            CatModel(Gender.Female, CatBreed.BalineseJavanese, "Mimi", "Loves attention", "https://cdn2.thecatapi.com/images/2hv.jpg")
         )
+
 
         catAdapter.setData(cats)
     }
