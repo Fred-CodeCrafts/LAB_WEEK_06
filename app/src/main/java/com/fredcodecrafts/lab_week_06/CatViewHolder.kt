@@ -1,6 +1,5 @@
 package com.fredcodecrafts.lab_week_06
 
-
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
